@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    color:white;
+    font-family:'Space Grotesk';
+    
+
+
+}
+
+body{
+    background-color: rgb(56, 56, 56);
+}
+/*menu de navigation*/
+
+nav{
+    width: 100%;           
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    height:10rem;
+    position:sticky;
+}
+
+a{
+    margin:2rem;
+    color:white;
+    text-decoration:none;
+}
+
+nav a{
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color: rgb(38, 254, 247);
+}
+
+.logo{
+    position:relative;
+    left:-2rem;
+    width:15em;
+}
+
+/*Accueil :  style général*/
+.accueil{
+    width: 100%;
+    height: 60vh;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    font-size:3vh;
+}
+
+.accueil img{
+    width:50%;
+}
+
+.accueil div{
+    width:50%;
+    height:100%;
+    background-color: rgb(40, 40, 40);
+    padding: 2em;
+    display: flex;
+    flex-direction:column;
+}
+
+
+
+.accueil h1{
+    position:relative;
+    margin: 2vh 0vh;
+    animation: transition1 0.5s ease-in;
+    
+}
+
+.accueil img{
+    width: 50%;
+}
+
+
+/*button d'appel à l'action*/
+
+
+.cta{
+    font-size:2vh;
+    border-radius: 1em;
+    border:none;
+    color:black;
+    background-color: rgb(38, 254, 247);
+    padding:1vh;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width:fit-content;
+    cursor:pointer;
+    margin: auto;
+    font-weight:800;
+
+}
+
+/*animations*/
+@keyframes transition1{
+    0%{
+        color: transparent;
+        left:-50px;
+    }
+    100%{
+        left:0;
+    }
+}
+
+@keyframes rebond{
+    0%{
+        top:0;
+    }
+    50%{
+        top:1vh;
+    }
+    100%{
+        top:0;
+    }
+}
+
+/*footer*/
+
+footer {
+    margin-top: 10vh;
+    width:100%;
+    border-top: 1px solid rgb(88, 183, 181);
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+footer a{
+    margin:0;
+    
+}
+
+footer img{
+    width:20vh;
+}
+
+footer div{
+    display:flex;
+    flex-direction:column;
+}
+
+.copyright{
+    color:white;
+    text-shadow:rgb(38, 254, 247) 0.5px 0 5px;
+}
+
+footer i{
+    margin:0.5rem;
+    color:white;
+    text-shadow:rgb(38, 254, 247) 0.5px 0 5px;
+    font-size:3vh;
+
+}
+
+
+/*main*/
+
+main{
+    padding:5vh 5vw;
+    height:fit-content;
+}
+
+.alerte{
+    font-size:3vh;
+    color:rgb(114, 250, 245);
+    margin:2rem;
+    animation: transition1 1s ease-in;
+    transition: 0.5s;
+}
+
+.alerte i{
+    color:rgb(38, 254, 247);
+}
+
+.tabdebord{
+    display:flex;
+    flex-wrap: wrap;
+    gap:2vh;
+    justify-content: space-around;
+}
+
+.tabdebord h2{
+    font-size: 3vh;
+    color:rgb(40, 40, 40);
+}
+
+.tabdebord span{
+    font-size: 2vh;
+    color:rgb(40, 40, 40);
+}
+
+.tabdebord>div{
+    max-width:40vw;
+    min-width: 40vw;
+    min-height: 40vw;
+    height:fit-content;    
+    padding:3vh 3vw;
+    display: flex;
+    flex-direction:column;
+    background-color: whitesmoke;
+}
+
+
+.infos-salarie .initiales{
+    background-color: rgb(56, 56, 56);
+    width: fit-content;
+    padding: 5vh;
+    font-size: 15vw;
+    border-radius: 100%;
+    color:rgb(114, 250, 245);
+    margin: 2vh auto;
+    border: 10px solid rgb(88, 183, 181);
+}
+
+.infos-salarie .initiales:hover{
+    background-image: url("../img/redouane.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:transparent;
+}
+
+.infos-salarie{
+    flex-direction: row;
+}
+
+.tabdebord .infos-salarie div{
+    display:flex;
+    flex-direction:column;
+
+}
+
+
+.tabdebord div span{
+    font-size: 3vh;
+    margin: 1vh 0;
+}
+
+.tabdebord div a{
+    text-decoration: underline;
+    color:rgb(40, 40, 40);
+    text-align: end;
+}
+
+.tabdebord div h2{
+    padding-bottom:0.9vh;
+    border-bottom:0.5vh solid rgb(21, 118, 115);
+    border-bottom-right-radius:3vh;
+}
+
+.remonter{
+    color:black;
+    display: flex;
+    width: 4vh;
+    height:4vh;
+    background-color: white;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4vh;
+    float:right;
+    position:relative;
+    animation:rebond 0.7s infinite;
+}
+
+.remonter i{
+    color:black;
+}
+
+p{
+    font-size:2vh;
+    margin: 3vh;
+}
+
+.chiffres{
+    background-image: linear-gradient(to right, #ff6f61, #ffa64d);
+    background-clip: text;
+    color:transparent;
+    font-weight:bold;
+}
+
+#contact form{
+    padding: 4vh 2vw;
+    background-color: white;
+    color:black;
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(40, 40, 40);
+
+}
+
+#contact form label, #contact form input,#contact form textarea{
+    font-size:3vh;
+    margin: 1vh auto;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
