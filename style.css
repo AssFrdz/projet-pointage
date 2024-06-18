@@ -1,0 +1,28 @@
+.rond{
+    color:red(255, 0, 17);
+    text-decoration: underline;
+    text-transform: capitalize;
+
+}
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.rond{
+height: 300px;
+background-color:red;
+width: 300px;
+border-radius:  300px; 
+}
+.rond:hover{
+    animation: anim1 1s infinite;
+}
+@keyframes anim1{
+    0%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: red;
+        transform: scale(6
+        );
+    }
+}

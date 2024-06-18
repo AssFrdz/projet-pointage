@@ -1,5 +1,5 @@
 <div id="abord">
-<h1><?=$titre?></h1>
+<h1 class="titre"><?=$titre?></h1>
 <?php
 $a = false;
 ?>
@@ -14,6 +14,8 @@ $a = false;
 
 <div class="infos-salarie">
     <h2>Mes informations</h2>
+    <div>
+
     <div class="initiales">
     <?=$exemple["infos-s"]["initiales"]?>
     </div>
@@ -30,8 +32,9 @@ $a = false;
     <span><?=$exemple["infos-s"]["responsable"]?></span>
     <a class="modif-salarie" href="index.php?action=modifinfos">Modifier mes informations personnelles</a>
     </div>
+    </div>
 </div>
-
+<div class="ssm">
 <div class="statistiques">
     <h2>Données statistiques</h2>
 <span>Nombre d'heures totales travaillées :</span>
@@ -53,6 +56,7 @@ $a = false;
     <div class="graphik">
 
     </div>
+</div>
 </div>
 </div>
 </div>

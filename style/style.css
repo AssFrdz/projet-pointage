@@ -198,8 +198,7 @@ main{
     color:rgb(40, 40, 40);
 }
 
-.tabdebord>div{
-    max-width:40vw;
+.infos-salarie, .statistiques, .vue-semaine, .vue-mois{
     min-width: 40vw;
     min-height: 40vw;
     height:fit-content;    
@@ -213,11 +212,13 @@ main{
 .infos-salarie .initiales{
     background-color: rgb(56, 56, 56);
     width: fit-content;
+    height: fit-content;
     padding: 5vh;
     font-size: 15vw;
     border-radius: 100%;
     color:rgb(114, 250, 245);
-    margin: 2vh auto;
+    position: relative;
+
     border: 10px solid rgb(88, 183, 181);
 }
 
@@ -229,14 +230,15 @@ main{
     color:transparent;
 }
 
-.infos-salarie{
+.infos-salarie>div{
+    display:flex;
     flex-direction: row;
+    
 }
 
 .tabdebord .infos-salarie div{
     display:flex;
     flex-direction:column;
-
 }
 
 
@@ -251,10 +253,20 @@ main{
     text-align: end;
 }
 
-.tabdebord div h2{
-    padding-bottom:0.9vh;
-    border-bottom:0.5vh solid rgb(21, 118, 115);
-    border-bottom-right-radius:3vh;
+.info-s{
+    float:left;
+}
+
+
+.ssm{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.ssm div{
+    margin:2rem;
 }
 
 .remonter{
@@ -288,7 +300,7 @@ p{
     font-weight:bold;
 }
 
-#contact form{
+#contact form,#connexion form{
     padding: 4vh 2vw;
     background-color: white;
     color:black;
@@ -298,7 +310,7 @@ p{
 
 }
 
-#contact form label, #contact form input,#contact form textarea{
+#contact form label, #contact form input,#contact form textarea,#connexion form label,#connexion form input{
     font-size:3vh;
     margin: 1vh auto;
 }
@@ -306,6 +318,10 @@ p{
 a:hover{
     cursor: pointer;
 }
+/*page de connexion*/
+
+
+
 
 
 
